@@ -27,11 +27,19 @@
     background-color: transparent;
 }
 .title {
-    text-align: center;
     font-weight: 400;
     color: #555;
     margin-bottom: 80px;
     position: relative;
+}
+.title::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: rgb(73, 192, 79);
 }
 /* .title::after {
     content: '';
@@ -163,4 +171,127 @@
     color: #555;
     display: flex;
     justify-content: space-between;
+}
+
+/* graduation starts here */
+.graduation {
+    color: #fff;
+    background-position: center;
+    background-image: linear-gradient(rgba(0 ,0 ,0 , 0.4),rgba(0, 0, 0, 0.4)),url("../Photos/graduation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.graduation h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+.graduation h6 {
+    margin-top: 20px;
+}
+.graduation .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+.single-graduation i {
+    color: orange;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+/* blogs starts here */
+#blogs {
+    margin: 60px 0 80px;
+}
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.single-blog {
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(229, 255, 190);
+    position: relative;
+}
+.single-blog img {
+    width: 100%;
+    height: 200px;
+}
+.date {
+    color: #fff;
+    font-size: 20px;
+    background-color: orange;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 4px 25px;
+}
+.single-blog h4 {
+    margin: 20px 0;
+}
+.single-blog p {
+    text-align: justify;
+}
+.single-blog a {
+    color: #555;
+}
+
+/* footer starts here */
+footer {
+    color: #fff;
+    padding: 50px 0 20px;
+    background-color: #222;
+}
+.footer-section {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+.single-footer-section h3 {
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.single-footer-section p {
+    color: rgb(180, 175, 175);
+}
+.address span {
+    color: rgb(180, 175, 175);
+}
+.address a {
+    margin: 5px 0;
+    display: block;
+    color: rgb(180, 175, 175);
+}
+.address a:hover {
+    color: #fff;
+}
+footer i {
+    color: rgb(241, 30, 65);
+}
+footer span i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+footer input,button {
+    padding: 5px 10px;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+footer button {
+    color: #fff;
+    background-color: rgb(241, 30, 65);
+}
+footer article {
+    font-size: 14px;
+}
+footer article i {
+    color: #fff;
 }
